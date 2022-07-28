@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Calculator</title>
+    <meta charset="UTF-8" />
+    <link href="src/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="app" class="app">
+      <div class="container">
+        <h1 style="text-align: center; padding: 30px 0;">Stock-Counter</h1>
+        <h2 style="text-align: center;">
+          The Profit / Loss Calculator for Stocks
+        </h2>
+      </div>
+      <input
+        type="number"
+        class="costprice"
+        placeholder="Enter cost price"
+        required
+      />
+      <input
+        type="number"
+        class="quantity"
+        placeholder="Enter quantity of stock"
+        required
+      />
+      <input
+        type="number"
+        class="sellingprice"
+        placeholder="Enter selling price"
+        required
+      />
+
+      <button class="check">Check</button>
+
+      <div class="result">
+        <p class="message"></p>
+        <img class="animated-gif" />
+      </div>
+    </div>
+    <p class="footer">Made with love by Sabiya.</p>
+    <script src="src/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(106, 87, 228),
+    rgb(147, 50, 204),
+    rgb(180, 24, 231)
+  );
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem auto;
+  height: 100vh;
+  position: relative;
+}
+.app {
+  background-color: rgb(0, 0, 0, 0.4);
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+input {
+  padding: 8px;
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 10px;
+  width: 80%;
+  border: 3px solid rgb(180, 24, 231);
+}
+button {
+  outline: none;
+  border: none;
+  width: 200px;
+  font-size: 1.2rem;
+  color: white;
+  padding: 8px;
+  border-radius: 10px;
+  background-color: rgb(183, 24, 236);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.button:active {
+  translate: scaleX(0.7);
+}
+.result {
+  margin: 0px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 20px;
+}
+img.animated-gif {
+  width: 250px;
+  height: auto;
+}
+
+.message {
+  color: rgb(29, 238, 29);
+  font-size: 1rem;
+  width: 100%;
+  padding: 0px;
+}
+.footer {
+  /* position: absolute; */
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  bottom: 0;
+  text-align: center;
+}
